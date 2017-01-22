@@ -6,9 +6,10 @@
   "author": "zhanjh <zhanjh@126.com>",
   "license": "MIT",
   "scripts": {
-    "build": "./script/build-html.js",
+    "build": "./script/clear.js && ./script/build-html.js",
     "watch": "onchange './md/**/*.md' -- npm run build",
-    "server": "ws"
+    "server": "ws",
+    "clear": "./script/clear.js"
   },
   "devDependencies": {
     "chalk": "^1.1.3",
